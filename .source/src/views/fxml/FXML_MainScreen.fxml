@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="borPane_main" layoutX="7.0" prefHeight="768.0" prefWidth="1366.0">
+         <top>
+            <Pane fx:id="headerPane" prefHeight="615.0" prefWidth="1371.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="559.0" fitWidth="1160.0" layoutX="94.0" layoutY="76.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../assets/img/map.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="dock1" fitHeight="40.0" fitWidth="40.0" layoutX="352.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons/tickgreen.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="dock2" fitHeight="40.0" fitWidth="40.0" layoutX="876.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons/tickgreen.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="dock3" fitHeight="40.0" fitWidth="40.0" layoutX="636.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons/tickgreen.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="94.0" layoutY="41.0" text="Docks Map" textFill="#272727">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <Pane prefHeight="184.0" prefWidth="1358.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="searchBarField" layoutX="145.0" layoutY="56.0" prefHeight="42.0" prefWidth="948.0" promptText="Search for bike here ..." />
+                  <Button fx:id="searchBtn" layoutX="1104.0" layoutY="56.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="150.0" text="SEARCH FOR BIKE" />
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="104.0" layoutY="60.0">
+                     <image>
+                        <Image url="@../../assets/img/search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

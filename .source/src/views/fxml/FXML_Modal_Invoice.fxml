@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="800.0">
+            <center>
+                <Pane prefHeight="730.0" prefWidth="630.0" BorderPane.alignment="TOP_LEFT">
+                    <children>
+                        <Label layoutX="89.0" layoutY="366.0" text="Time Issued" textFill="#7c7c7c">
+                            <font>
+                                <Font name="Segoe UI" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="89.0" layoutY="430.0" text="Bike Name" textFill="#7c7c7c">
+                            <font>
+                                <Font name="Segoe UI" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="89.0" layoutY="462.0" text="Bike Type" textFill="#7c7c7c">
+                            <font>
+                                <Font name="Segoe UI" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="89.0" layoutY="494.0" text="Total Rental Time" textFill="#7c7c7c">
+                            <font>
+                                <Font name="Segoe UI" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="invoiceDateTxt" layoutX="429.0" layoutY="367.0" text="Time Issued">
+                            <font>
+                                <Font name="Segoe UI" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="bikeNameTxt" layoutX="429.0" layoutY="431.0" text="Bike Name">
+                            <font>
+                                <Font name="Segoe UI" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="bikeTypeTxt" layoutX="429.0" layoutY="463.0" text="E-bike">
+                            <font>
+                                <Font name="Segoe UI" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="totalRentTimeTxt" layoutX="429.0" layoutY="495.0" text="700,000 VND">
+                            <font>
+                                <Font name="Segoe UI" size="16.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="backToMainScreenButton" layoutX="343.0" layoutY="667.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" text="GO HOME">
+                            <font>
+                                <Font name="Segoe UI" size="14.0" />
+                            </font>
+                        </Button>
+                  <Label layoutX="89.0" layoutY="302.0" text="Rental Payment Amount" textFill="#7c7c7c">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rentalPaymentAmtTxt" layoutX="429.0" layoutY="303.0" text="700,000 VND">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="334.0" text="Invoice ID" textFill="#7c7c7c">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="invoiceIDTxt" layoutX="429.0" layoutY="335.0" text="Fake Invoice ID">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rentalPaymentIDTxt" layoutX="429.0" layoutY="598.0" text="700,000 VND">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="600.0" text="Payment ID" textFill="#7c7c7c">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="depositAmtTxt" layoutX="429.0" layoutY="239.0" text="700,000 VND">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="238.0" text="Deposit " textFill="#7c7c7c">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="depositIDTxt" layoutX="429.0" layoutY="207.0" text="700,000 VND">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="206.0" text="Deposit ID" textFill="#7c7c7c">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalTxt" layoutX="429.0" layoutY="553.0" text="700,000 VND">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="553.0" text="TOTAL" textFill="#7c7c7c">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="265.0" layoutY="25.0" text="Payment Successful" textFill="#46b07a">
+                     <font>
+                        <Font name="Segoe UI" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rentIDTxt" layoutX="429.0" layoutY="399.0" text="Rent ID">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="398.0" text="Rent ID" textFill="#7c7c7c">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="359.0" layoutY="83.0">
+                     <image>
+                        <Image url="@../../assets/icons/tickgreen.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </Pane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

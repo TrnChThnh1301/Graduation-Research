@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"boundaries"},{"l":"controllers"},{"l":"entities"},{"l":"exceptions.ecobike"},{"l":"exceptions.interbank"},{"l":"interfaces"},{"l":"utils"},{"l":"views.screen"},{"l":"views.screen.popup"}];updateSearchResults();

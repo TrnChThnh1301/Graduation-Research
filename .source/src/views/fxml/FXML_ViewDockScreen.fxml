@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="6.0" layoutY="7.0" prefHeight="768.0" prefWidth="1366.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="915.3333740234375" minWidth="750.0" prefWidth="821.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="609.3333129882812" minWidth="10.0" prefWidth="545.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="166.0" minHeight="6.0" prefHeight="86.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="762.0" minHeight="500.0" prefHeight="682.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="100.0" prefWidth="876.0">
+               <children>
+                  <ImageView fx:id="previousScreenIcon" fitHeight="48.0" fitWidth="45.0" layoutX="68.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/img/back.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane prefHeight="668.0" prefWidth="868.0" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="dockImageView" fitHeight="380.0" fitWidth="380.0" layoutX="68.0" layoutY="33.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../assets/img/docks/dongmac.jpg" />
+                     </image></ImageView>
+                  <Label fx:id="dockNameText" layoutX="496.0" layoutY="25.0" text="Mock Dock Name">
+                     <font>
+                        <Font name="Segoe UI Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="498.0" layoutY="84.0" text="Address">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="498.0" layoutY="115.0" text="Total Docks">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="498.0" layoutY="144.0" text="Total Available Bikes">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="498.0" layoutY="173.0" prefHeight="23.0" prefWidth="241.0" text="Total Available Docks">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dockAddressText" layoutX="680.0" layoutY="86.0" text="MOCK_ADDRESS">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dockCount" layoutX="680.0" layoutY="117.0" text="0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="availableDocksCount" layoutX="680.0" layoutY="175.0" text="0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="availableBikeCount" layoutX="680.0" layoutY="144.0" text="0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="returnBikeButton" layoutX="499.0" layoutY="222.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" text="SELECT">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="67.0" layoutY="452.0" text="EcoBikeRental has a sustainable transportation option where customers can rent bicycles for short periods of time, ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="471.0" text="typically from automated kiosks located throughout a city. The bikes are equipped with GPS, locks, and may offer ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="491.0" text="additional features like electric assist. The system aims to reduce carbon emissions and traffic congestion by providing">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="511.0" text="a convenient alternative to driving. The rental fee is usually paid using a credit card or a mobile app, and bikes can be">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="531.0" text="returned to any rental dock within the system's network.">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="97.0" prefWidth="479.0" GridPane.columnIndex="1" />
+            <Pane prefHeight="682.0" prefWidth="541.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="62.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="496.0" prefWidth="411.0" snapToPixel="false">
+                     <content>
+                        <VBox fx:id="bikeVBox" prefHeight="499.0" prefWidth="409.0" />
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="164.0" layoutY="23.0" text="List of Bikes in Dock">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

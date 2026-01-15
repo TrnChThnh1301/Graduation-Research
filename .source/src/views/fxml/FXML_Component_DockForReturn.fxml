@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="186.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fx:id="dockImage" fitHeight="131.0" fitWidth="131.0" layoutX="28.0" layoutY="25.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../assets/img/docks/dongmac.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="dockName" layoutX="190.0" layoutY="24.0" text="Dock X">
+            <font>
+                <Font name="Segoe UI Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="190.0" layoutY="83.0" text="Available slots">
+            <font>
+                <Font name="Segoe UI Bold" size="16.0" />
+            </font>
+        </Label>
+      <Label fx:id="dockAddressTxt" layoutX="318.0" layoutY="56.0" text="Mock Dock">
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font>
+      </Label>
+        <Label layoutX="190.0" layoutY="56.0" text="Address">
+            <font>
+                <Font name="Segoe UI Bold" size="16.0" />
+            </font>
+        </Label>
+      <Label fx:id="availableSlotsTxt" layoutX="316.0" layoutY="83.0" prefHeight="19.0" prefWidth="60.0" text="100">
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnBtn" layoutX="190.0" layoutY="114.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" text="RETURN HERE" />
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="20.0" top="20.0" />
+    </padding>
+</AnchorPane>
